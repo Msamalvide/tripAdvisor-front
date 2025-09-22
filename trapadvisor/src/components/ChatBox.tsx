@@ -63,6 +63,11 @@ export default function ChatBox() {
                 )
             }
 
+                <Mensaje
+                isAi={true}
+                mensaje="Perfecto analizando tu solicitud..."
+                />
+
               <div ref={messagesEndRef} />
         </section>
 
