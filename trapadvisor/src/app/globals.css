@@ -120,3 +120,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* .encabezado {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #284947, #60AFA9);
+  color: white;
+  border-radius: 0.75rem 0.75rem 0 0;
+  height: 8rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  overflow: hidden; 
+} */
+
+/* Tablet breakpoint (768px and up) */
+@media (min-width: 768px) {
+  .encabezado {
+    height: 10rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Desktop breakpoint (1024px and up) */
+@media (min-width: 1024px) {
+  .encabezado {
+    height: 12rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+}

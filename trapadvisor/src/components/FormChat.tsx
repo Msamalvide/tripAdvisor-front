@@ -41,28 +41,32 @@ export default function FormChat({setChat}: Props) {
 
 
   return (
-    
-    <Form {...form} >
-      <form onSubmit={form.handleSubmit(onSubmit)} className=" flex space-y-8 border w-150 justify-between items-center border-red-300  bg-white">
 
-        <div className="flex space-x-2 w-full border-2 border-blue-300 p-2 rounded-xl">
+    <Form {...form} >
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex rounded-b-lg sm:rounded-b-xl bg-gradient-to-r from-[#284947] to-[#707E7A] w-full h-full justify-between items-center">
+
+        <div className="flex space-x-1 font-normal sm:space-x-2 w-full rounded-lg sm:rounded-xl gap-2 pr-2">
           <FormField
             control={form.control}
             name="mensaje"
             render={({ field }) => (
-              <FormItem className="w-full">
+              <FormItem className="w-full ml-1 mr-2">
                 <FormControl >
-                  <Input className="text-black w-full border-2" {...field} />
+                  <Input className="text-white ml-1" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-          <Button type="submit" className="flex h-9 bg-[#0C90A7] ">
+          {
+            form.watch("mensaje")? <Button type="submit" className="flex h-8 sm:h-9 bg-[#0C90A7] ">
             <ArrowUpFromLine/>
-          </Button>
+            </Button> 
+            : null
+          }
+          
         </div>
       </form>
     </Form>
-  );    
+  );
 }
