@@ -1,0 +1,10 @@
+# Carpeta donde está tu package.json
+  base = "trapadvisor"
+# Comando de build
+  command = "npm run build"
+# Directorio de salida que Next.js genera
+  publish = "trapadvisor/.next"
+    
+# Plugin oficial de Netlify para Next.js
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
