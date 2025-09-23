@@ -28,7 +28,7 @@ export default function ChatBox() {
         try{
             const response: Record<string, string>={
                 "ver productos": "Claro, ¿quieres ver categorías o ofertas?",
-                "analizar la competencia": "Esa funcion aun no esta disponible, lo sentimos :(",
+                "analizar la competencia": "Esa funcion aun no esta disponible, lo sentimos 🚀.",
                 "hola": "¡Hola! ¿En qué puedo ayudarte?",
                 "ayuda": "Estoy aquí para ayudarte con analisis de hoteles. ¿Qué necesitas?",
                 "gracias": "¡De nada! ¿Algo más?"
