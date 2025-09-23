@@ -13,7 +13,7 @@ export default function Encabezado({onClear}: Props) {
       </div>
 
       <div className="w-full max-w-lg mx-auto">
-        <h1 className="text-3xl md:text-5xl text-center">TripAdvisor</h1>
+        <h1 className="text-3xl md:text-5xl text-center mr-40">TripAdvisor</h1>
       </div>
 
       {onClear && (

@@ -52,7 +52,7 @@ export default function FormChat({setChat}: Props) {
             render={({ field }) => (
               <FormItem className="w-full ml-1 mr-2">
                 <FormControl >
-                  <Input className="text-white ml-1" {...field} />
+                  <Input className="text-white ml-1 bg-gray-200 text-black" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
